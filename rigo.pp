@@ -93,6 +93,7 @@ node default {
   package { "hdparm": ensure => installed }
   package { "gptfdisk": ensure => installed }
   package { "tree": ensure => installed }
+  package { "time": ensure => installed }
 
   package { "tcpdump": ensure => installed }
   package { "wireshark-cli": ensure => installed }
@@ -118,6 +119,11 @@ node default {
   package { "vim-tagbar": ensure => installed }
 
   package { "adobe-source-code-pro-fonts": ensure => installed }
+
+  package { "scrot": ensure => installed }
+  package { "imagemagick": ensure => installed }
+  package { "gimp": ensure => installed }
+  package { "inkscape": ensure => installed }
 
   package { "emacs": ensure => installed }
 
