@@ -110,10 +110,12 @@ node default {
   package { "stack": ensure => installed }
   package { "docker": ensure => installed }
   package { "git": ensure => installed }
+  package { "scratch": ensure => installed }
 
   package { "ctags": ensure => installed }
   package { "hasktags": ensure => installed }
 
+  package { "gedit": ensure => installed }
   package { "vim": ensure => installed }
   package { "vim-bufexplorer": ensure => installed }
   package { "vim-tagbar": ensure => installed }
@@ -126,6 +128,13 @@ node default {
   package { "inkscape": ensure => installed }
 
   package { "emacs": ensure => installed }
+
+  package { "stella": ensure => installed }
+
+  package { "cmus": ensure => installed }
+  package { "milkytracker": ensure => installed }
+  package { "musescore": ensure => installed }
+  package { "solfege": ensure => installed }
 
   # Add dep on user and git?
   vcsrepo { '/home/ron/.emacs.d':
